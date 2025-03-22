@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 4rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  &__title {
+    font-size: 5rem;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      font-size: 3rem;
+      list-style-type: none;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    font: inherit;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
