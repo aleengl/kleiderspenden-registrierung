@@ -13,15 +13,14 @@ import {NgForOf} from '@angular/common';
 })
 export class RegisterFormComponent {
   pickupAddress = '';
-  studio = '';
-  skill = '';
+  clothingType = '';
+  crisisArea = '';
   selectedOption = '';
-  skills = ['Skill 1', 'Skill 2', 'Skill 3'];
   radioOptions = [
     {
       id: 'option1',
-      value: 'Übergabe an der Geschäftstelle',
-      label: 'Übergabe an der Geschäftstelle'
+      value: 'Übergabe an der Geschäftsstelle',
+      label: 'Übergabe an der Geschäftsstelle'
     },
     {
       id: 'option2',
@@ -29,4 +28,6 @@ export class RegisterFormComponent {
       label: 'Abholung'
     }
   ];
+  clothingTypes = ['T-Shirt', 'Hose', 'Jacke', 'Pullover', 'Mütze', 'Schuhe', 'Socken'];
+  crisisAreas = ['Europa', 'Afrika', 'Asien', 'Südamerika', 'Nordamerika', 'Australien'];
 }

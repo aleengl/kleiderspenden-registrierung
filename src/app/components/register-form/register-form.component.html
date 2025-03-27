@@ -18,19 +18,22 @@
   </div>
 }
 <div class="form-group">
-  <label for="studio">Studio</label>
-  <input [(ngModel)]="studio" class="form-control" id="studio"
-         name="studio" type="text">
+  <label for="clothingType">Art der Kleidung</label>
+  <select [(ngModel)]="clothingType" class="form-control" id="clothingType" name="clothingType" required>
+    <option *ngFor="let clothingType of clothingTypes" [value]="clothingType">
+      {{ clothingType }}
+    </option>
+  </select>
 </div>
 <div class="form-group">
-  <label for="skill">Skill</label>
-  <select [(ngModel)]="skill" class="form-control"
-          id="skill"
-          name="skill" required>
-    <option *ngFor="let skill of skills" [value]="skill">{{ skill }}</option>
+  <label for="crisisArea">Aktuelles Krisengebiet</label>
+  <select [(ngModel)]="crisisArea" class="form-control" id="crisisArea" name="crisisArea" required>
+    <option *ngFor="let crisisArea of crisisAreas" [value]="crisisArea">
+      {{ crisisArea }}
+    </option>
   </select>
 </div>
 <p>{{ pickupAddress }}</p>
-<p>{{ studio }}</p>
-<p>{{ skill }}</p>
 <p>{{ selectedOption }}</p>
+<p>{{ crisisArea }}</p>
+<p>{{ clothingType }}</p>
